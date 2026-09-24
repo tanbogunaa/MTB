@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTB | More Than Brothers</title>
+</head>
+
+<header>
+    <div>
+        <h1>MTB</h1>
+        <p>MORE THAN BROTHERS</p>
+    </div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<main class="hero">
+    <div class="hero-content">
+        <p class="brand-name">MTB — MORE THAN BROTHERS</p>
+
+        <h2>WE MOVE<br>TOGETHER.</h2>
+
+        <p class="hero-text">
+            Streetwear built around brotherhood, style and unity.
+        </p>
+
+        <a href="#shop" class="hero-btn">SHOP MTB</a>
+    </div>
+</main>
+    <h2>MORE THAN A BRAND.</h2>
+    <h3>IT'S A BROTHERHOOD.</h3>
+
+    <p>Streetwear made for those who move together.</p>
+
+    <button>SHOP NOW</button>
+</main>
+
+<section id="shop">
+    <h2>MTB COLLECTION</h2>
+
+    <div class="products">
+
+        <div class="product">
+<div class="product-image">
+    <img src="images/mtb-shirt.jpg" alt="MTB Classic T-Shirt">
+</div>
+            <h3>MTB Classic T-Shirt</h3>
+            <p>GH₵120</p>
+            <button>ORDER NOW</button>
+        </div>
+
+<section id="shop">
+    <h2>MTB COLLECTION</h2>
+
+    <div class="products">
+
+        <div class="product"> 
+        <div class="product">
+
+    <div class="product-image">
+        <img src="images/mtb-front.jpg" alt="MTB Classic T-Shirt">
+    </div>
+
+    <h3>MTB Classic T-Shirt</h3>
+    <p>GH₵120</p>
+
+    <a href="#contact" class="order-btn">ORDER NOW</a>
+
+</div>
+
+
+<div class="product">
+
+    <div class="product-image">
+        <img src="images/mtb-back.jpg" alt="MTB Brotherhood T-Shirt">
+    </div>
+
+    <h3>MTB Brotherhood T-Shirt</h3>
+    <p>GH₵120</p>
+
+    <a href="#contact" class="order-btn">ORDER NOW</a>
+
+</div>
+
+
+<div class="product">
+
+    <div class="product-image">
+        <div class="coming-soon">
+            MTB HOODIE
+        </div>
+    </div>
+
+    <h3>MTB Hoodie</h3>
+    <p>Coming Soon</p>
+
+    <button disabled>COMING SOON</button>
+
+</div>
+            <div class="product-images">
+                <img src="images/mtb-front.jpg" alt="MTB More Than Brothers T-Shirt front">
+                <img src="images/mtb-back.jpg" alt="MTB More Than Brothers T-Shirt back">
+            </div>
+
+            <h3>MTB Classic T-Shirt</h3>
+            <p>More Than Brothers</p>
+            <p class="price">GH₵120</p>
+
+            <a class="order-btn"
+               href="https://wa.me/233204637378">
+                ORDER NOW
+            </a>
+        </div>
+
+    </div>
+</section>
+            <div class="product-image">MTB HOODIE</div>
+            <h3>MTB Brotherhood Hoodie</h3>
+            <p>GH₵250</p>
+<a class="order-btn" href="https://wa.me/23320463738">
+    <label for="size">Choose your size:</label>
+
+<select id="size">
+<div class="order-options">
+
+    <label for="size">Size:</label>
+
+    <select id="size">
+        <option value="S">Small (S)</option>
+        <option value="M">Medium (M)</option>
+        <option value="L">Large (L)</option>
+        <option value="XL">Extra Large (XL)</option>
+    </select>
+
+    <label for="quantity">Quantity:</label>
+
+    <input
+        type="number"
+        id="quantity"
+        value="1"
+        min="1"
+        max="10"
+    >
+
+</div>
+
+<button onclick="orderMTB()"></button>
+
+<button onclick="orderMTB()">ORDER NOW</button>
+</a>
+</a>
+        </div>
+
+    </div>
+</section>
+
+<section id="about">
+    <h2>ABOUT MTB</h2>
+    <p>
+        More Than Brothers is more than clothing.
+        It's about brotherhood, loyalty and moving forward together.
+    </p>
+</section>
+
+<section id="contact">
+    <h2>CONTACT MTB</h2>
+    <p>Message us to place an order.</p>
+    <button>WHATSAPP US</button>
+</section>
+
+    <header>
+        <h1>MTB</h1>
+        <p>MORE THAN BROTHERS</p>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>MORE THAN A BRAND.</h2>
+        <h3>IT'S A BROTHERHOOD.</h3>
+
+        <p>Welcome to MTB — More Than Brothers.</p>
+
+        <button>SHOP NOW</button>
+    </main>
+<footer>
+
+    <div class="footer-brand">
+        <h2>MTB</h2>
+        <p>MORE THAN BROTHERS</p>
+    </div>
+
+    <div class="footer-links">
+        <a href="#">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div class="socials">
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>
+        <a href="#">WhatsApp</a>
+    </div>
+
+    <p class="copyright">
+        © 2026 MTB — More Than Brothers. All rights reserved.
+    </p>
+
+</footer>
+</body>
+<script>
+<script>
+function orderMTB() {
+
+    const size = document.getElementById("size").value;
+    const quantity = document.getElementById("quantity").value;
+
+    const phone = "233204637378";
+
+    const message =
+        "Hello MTB! I want to order:%0A%0A" +
+        "Product: MTB Classic T-Shirt%0A" +
+        "Size: " + size + "%0A" +
+        "Quantity: " + quantity + "%0A" +
+        "Price: GH₵120 each";
+
+    window.location.href =
+        "https://wa.me/" + phone + "?text=" + message;
+}
+</script>

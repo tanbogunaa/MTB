@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0a0a0a;
+    color: white;
+}
+
+/* Header */
+header {
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
+}
+
+header h1 {
+    font-size: 35px;
+    letter-spacing: 4px;
+}
+
+header p {
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: #aaa;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+nav a:hover {
+    color: #aaa;
+}
+
+/* Hero section */
+main {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+main h2 {
+    font-size: 55px;
+    letter-spacing: 3px;
+}
+
+main h3 {
+    font-size: 25px;
+    margin-top: 10px;
+    color: #aaa;
+}
+
+main p {
+    margin: 25px 0;
+    color: #ccc;
+}
+
+button {
+    background: white;
+    color: black;
+    border: none;
+    padding: 15px 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #aaa;
+}/* Shop */
+#shop {
+    padding: 80px 8%;
+    text-align: center;
+    background: #111;
+}
+
+#shop h2 {
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 280px;
+    padding: 20px;
+    background: #181818;
+}
+
+.product-image {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.product h3 {
+    margin-bottom: 10px;
+}
+
+.product p {
+    margin-bottom: 15px;
+}
+
+/* About */
+#about {
+    padding: 80px 15%;
+    text-align: center;
+}
+
+#about h2,
+#contact h2 {
+    margin-bottom: 20px;
+}
+
+/* Contact */
+#contact {
+    padding: 80px 15%;
+    text-align: center;
+    background: #111;
+}.product-image {
+    height: 300px;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}.product-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.product-images img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.order-btn {
+    display: inline-block;
+    padding: 13px 25px;
+    background: white;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}/* MTB HERO */
+.hero {
+    min-height: 90vh;
+    background-image:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.75)),
+        url("images/mtb-front.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 50px 8%;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.brand-name {
+    letter-spacing: 4px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.hero h2 {
+    font-size: clamp(50px, 9vw, 100px);
+    line-height: 0.9;
+    margin: 20px 0;
+}
+
+.hero-text {
+    color: #ddd;
+    font-size: 18px;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 16px 35px;
+    background: white;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero-btn:hover {
+    background: #ccc;
+}@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav a {
+        margin: 0 7px;
+        font-size: 13px;
+    }
+
+    .hero {
+        min-height: 80vh;
+        padding: 30px 6%;
+    }
+
+    .hero h2 {
+        font-size: 55px;
+    }
+
+    .product-images img {
+        height: 240px;
+    }
+}#size {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 15px;
+    background: #222;
+    color: white;
+    border: 1px solid #555;
+}.order-options {
+    margin: 20px 0;
+    text-align: left;
+}
+
+.order-options label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.order-options select,
+.order-options input {
+    width: 100%;
+    padding: 12px;
+    background: #222;
+    color: white;
+    border: 1px solid #555;
+}
+
+.product button {
+    width: 100%;
+    padding: 14px;
+    background: white;
+    color: black;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}.coming-soon {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.product button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+footer {
+    padding: 60px 8% 25px;
+    background: #050505;
+    border-top: 1px solid #333;
+    text-align: center;
+}
+
+.footer-brand h2 {
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+
+.footer-brand p {
+    color: #888;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.footer-links,
+.socials {
+    margin: 30px 0;
+}
+
+.footer-links a,
+.socials a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+}
+
+.footer-links a:hover,
+.socials a:hover {
+    color: #aaa;
+}
+
+.copyright {
+    color: #666;
+    font-size: 12px;
+    margin-top: 35px;
+}
+@media (max-width: 600px) {
+
+    header {
+        padding: 20px;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    nav {
+        margin-top: 15px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+        font-size: 13px;
+    }
+
+    .hero {
+        min-height: 75vh;
+        padding: 30px 20px;
+    }
+
+    .hero h2 {
+        font-size: 48px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+    }
+
+    #shop {
+        padding: 60px 20px;
+    }
+
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .product-images img {
+        height: 260px;
+    }
+
+    #about,
+    #contact {
+        padding: 60px 20px;
+    }
+
+    .footer-links a,
+    .socials a {
+        display: block;
+        margin: 12px;
+    }
+}
